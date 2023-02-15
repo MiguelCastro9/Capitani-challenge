@@ -1,1 +1,23 @@
-<h1></h1>
+<br>
+<h5 class="text-center">informe o nome o username:</h5>
+<div class="container">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" (click)="salvar(username);" id="button-addon2">buscar</button>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let item of lista">
+      <div class="card">
+        <img src="{{item.avatar_url}}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.bio}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
