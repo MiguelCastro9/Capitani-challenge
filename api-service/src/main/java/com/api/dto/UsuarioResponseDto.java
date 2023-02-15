@@ -39,7 +39,6 @@ public class UsuarioResponseDto {
         this.updated_at = updated_at;
     }
 
-    //Método para converter entidade em DTO.
     public static UsuarioResponseDto converterEntidadeParaUsuarioDto(UsuarioModel usuarioModel) {
         return new UsuarioResponseDto(usuarioModel.getId(), usuarioModel.getLogin(), usuarioModel.getAvatar_url(),
                 usuarioModel.getName(), usuarioModel.getCompany(), usuarioModel.getBlog(), usuarioModel.getLocation(),
