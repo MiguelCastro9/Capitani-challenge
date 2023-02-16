@@ -16,7 +16,7 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(this.api_url);
   }
 
-  salvar(username: string){
-    return this.http.post<Usuario>(this.api_url, username);
+  getUsername(username: string){
+    return this.http.get<any>(this.api_url + '/' + username);
   }
 }

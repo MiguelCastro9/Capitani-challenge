@@ -2,7 +2,6 @@ package com.api.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -183,5 +182,4 @@ public class UsuarioModel implements Serializable {
     public void setUpdated_at(Date updated_at) {
         this.updated_at = updated_at;
     }
-
 }
