@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Usuario } from './model/usuario';
 import { UsuarioService } from './service/usuario.service';
 import { Component, OnInit } from '@angular/core';
@@ -38,6 +39,11 @@ export class AppComponent implements OnInit {
     this.usuarioService.getUsername(username).subscribe(dados => {
       alert('usuário encontrado com sucesso!');
       this.listar();
+    }, (erro: HttpErrorResponse) => {
+      if (erro.status == 404) {
+        alert('usuário não encontrado.');
+      }
+
     });
   }
 }

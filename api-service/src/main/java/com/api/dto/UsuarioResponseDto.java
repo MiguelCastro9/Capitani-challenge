@@ -1,12 +1,14 @@
 package com.api.dto;
 
 import com.api.model.UsuarioModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 
 /**
  *
  * @author Miguel Castro
  */
+@Schema(name = "Usuario response DTO")
 public class UsuarioResponseDto {
 
     private Long id;
