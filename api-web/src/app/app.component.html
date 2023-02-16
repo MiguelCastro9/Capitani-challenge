@@ -3,7 +3,7 @@
 <div class="container">
    <div class="input-group mb-3">
       <span class="input-group-text" id="basic-addon1">@</span>
-      <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="username" maxlength="20" aria-label="Username" aria-describedby="basic-addon1">
       <button class="btn btn-outline-secondary" type="button" (click)="getUsername(username);" id="button-addon2">buscar</button>
    </div>
 </div>
@@ -11,11 +11,20 @@
 <div class="container">
    <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col" *ngFor="let item of lista">
-         <div class="card">
+         <div class="card h-100">
             <img src="{{item.avatar_url}}" class="card-img-top">
             <div class="card-body">
                <h5 class="card-title">{{item.name}}</h5>
-               <p class="card-text">{{item.bio}}</p>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.login}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.email}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.bio}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.company}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.blog}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.location}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">seguidores {{item.followers}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">seguindo {{item.following}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.created_at | date : 'dd/MM/yyyy'}}</h6>
+               <h6 class="card-subtitle mb-2 text-muted">{{item.updated_at | date : 'dd/MM/yyyy'}}</h6>
             </div>
          </div>
       </div>

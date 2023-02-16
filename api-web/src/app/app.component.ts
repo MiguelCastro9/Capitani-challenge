@@ -18,6 +18,13 @@ export class AppComponent implements OnInit {
     this.listar();
   }
 
+  validarFormulario() {
+    if (!this.username) {
+      alert('campo não preenchido.');
+    }
+  return true;
+  }
+
   listar() {
     this.usuarioService.listar().subscribe(dados => {
       this.lista = dados;
@@ -25,8 +32,11 @@ export class AppComponent implements OnInit {
   }
 
   getUsername(username: string) {
+    if (!this.validarFormulario()) {
+      return;
+    }
     this.usuarioService.getUsername(username).subscribe(dados => {
-      alert('usuário cadastrado com sucesso!');
+      alert('usuário encontrado com sucesso!');
       this.listar();
     });
   }
