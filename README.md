@@ -24,4 +24,9 @@ Front-end:
 Import the "api-web" project into an IDE of your choice, the IDE used in the development was Visual Studio Code, so just open the CMD, Bash, ZSH...
 and run the command <code>npm install</code> inside the "api-web" root folder.
 
+## Demonstration
+
+![demo-api](https://user-images.githubusercontent.com/56695817/219277635-47108a9c-4878-4a68-ae84-84ce6db8202b.gif)
+
+
 
