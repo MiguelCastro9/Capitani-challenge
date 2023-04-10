@@ -19,6 +19,6 @@ public class SwaggerConfig {
                 .info(new Info()
                         .title("API GitHub")
                         .version("v1")
-                        .description("Capitani challenge"));
+                        .description("Study Challenge"));
     }
 }
