@@ -1,6 +1,6 @@
 ## Overview
 
-![image](https://user-images.githubusercontent.com/56695817/219271812-88d0a932-745f-41c2-853e-147e01d9f983.png)
+![image](https://user-images.githubusercontent.com/56695817/230924348-34ff6189-b499-4135-8904-82a898707ff9.png)
 
 ## Execution
 
