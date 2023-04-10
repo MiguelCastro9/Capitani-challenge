@@ -1,7 +1,5 @@
 ## Overview
 
-Capitani Challenge - Application developed according to requirements:
-
 ![image](https://user-images.githubusercontent.com/56695817/219271812-88d0a932-745f-41c2-853e-147e01d9f983.png)
 
 ## Execution
